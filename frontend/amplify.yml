@@ -1,0 +1,38 @@
+version: 1
+backend:
+  phases:
+    preBuild:
+      commands:
+        - echo "@aws-amplify/cli" > ~/.nvm/default-packages
+        - echo "yarn" >> ~/.nvm/default-packages
+        - nvm install 20
+        - nvm use 20
+        - yarn install
+    build:
+      commands:
+        - yarn add @parcel/watcher
+        - yarn ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
+frontend:
+  phases:
+    preBuild:
+      commands:
+        #- sudo fallocate -l 40G /swapfile
+        #- sudo chmod 600 /swapfile
+        #- sudo mkswap /swapfile
+        #- sudo swapon /swapfile
+        #- sudo swapon -s  
+        - nvm install 20
+        - nvm use 20
+        - yarn install --ignore-optional
+    build:
+      commands:
+        - yarn build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - .npm/**/*
+      - node_modules/**/*

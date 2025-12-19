@@ -1,0 +1,75 @@
+:root {
+  --brand: #2f5bf9;
+  --background-primary: #ffffff;
+  --background-secondary: #1c1c1c;
+  /* Texts */
+  --text-nav: #5d5d5d;
+  --text-body: #3d3d3d;
+  --text-heading: #1c1c1c;
+  /* Buttons */
+  --button-text: #ffffff;
+  --button-text-disabled: #bbbbbb;
+  --button-background-hovered: #293df1;
+  --button-background-disabled: #717ba0;
+  /* Header */
+  --header-height: 125px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-body);
+  background: var(--background);
+  font-family:
+    var(--inter),
+    Inter,
+    var(--roboto),
+    Roboto,
+    -apple-system;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  top: var(--header-height); /* Right below the Header */
+  scrollbar-width: none; /* Firefox - Hides the scrollbar but still allows scrolling */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari - Hides the scrollbar but still allows scrolling */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  body {
+    top: 85px; /* Right below the Header */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    top: 77px; /* Right below the Header */
+  }
+}
+
+.editor-text-underline {
+  text-decoration: underline;
+}
+
+.editor-text-underlineStrikethrough {
+  text-decoration: underline line-through;
+}
