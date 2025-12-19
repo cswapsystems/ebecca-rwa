@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.943.0",
+    "@aws-sdk/lib-dynamodb": "^3.943.0",
+    "@blockfrost/blockfrost-js": "^6.0.0",
+    "@lucid-evolution/lucid": "^0.4.29",
+    "dotenv": "^17.2.3"
+  }
+}
