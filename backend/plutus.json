@@ -1,0 +1,361 @@
+{
+  "preamble": {
+    "title": "cswap/aiken-ebecca",
+    "version": "0.1.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.19+e525483"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "fractions.fractions.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/fractions~1FractionAction"
+        }
+      },
+      "parameters": [
+        {
+          "title": "stt_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "nft_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "nft_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "frac_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "max_parts",
+          "schema": {
+            "$ref": "#/definitions/Int"
+          }
+        }
+      ],
+      "compiledCode": "5903d901010022222229800aba2aba1aba0aab9faab9eaab9dab9a9bae0079bae0069bae0059bae0049bae0039bad002488888888888896600264653001300e00198071807800cdc3a4001300e00248889660026004601c6ea800e266446644b30013006001899192cc004c06400a0091640586eb4c05c004c04cdd50044566002600600315980098099baa0088014590144590112022198009180a980b180b180b180b000cdd2a40012301530160019180a980b180b000c8966002600c60246ea800a26464b30013019002801c590161bad301700130133754005164045370e9002244444465300198009bab300730183754015009808a002cc004dd59803980c1baa00a80ac051001488a6002601d30010038014005004528528a032488966002601c60346ea8042264b30015980099b8848008006266e24004052294101a456600266e1c0100062b3001300c003899198008009bac3009301d375401e44b30010018a508acc004c966003300137566018603e6ea800603901b4015159800cc004dd59806180f9baa00180d406500544c9660026026603e6ea8006266e1cdd6981198101baa30233020375400200b14a080f0c9660026014603e6ea8006264660180022601e6604600297ae030233020375400314c0103d87a800040786016603e6ea8006294101d4528203a30210018a518998010011811000a038407d1640691640691640686eb4c078c06cdd500844c9660026040003132598009803980e1baa001899198048008acc004cdc380319b8148000dd69810980f1baa0018acc004cdc3802a400314a31640711640706040603a6ea80062c80d8c020c070dd51804980e1baa301f0018b203a32330010013758603e60386ea8038896600200314bd7044cc8966002b300198009bab300c301f37546018603e6ea800a03901b40151598009804980f1baa300b301f37546018603e6ea800a2946294101d4528203a89981080119802002000c4cc01001000501d18100009810800a03c406422232598009805980d1baa0018a40011375a603c60366ea8005019192cc004c02cc068dd5000c530103d87a8000899198008009bab301f301c375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c0180062601a66042603e00497ae08a60103d87a80004075133004004302300340746eb8c074004c08000501e203232330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c0180062601866040603c00497ae08a60103d87a80004071133004004302200340706eb8c070004c07c00501d0c040dd50031bae3012300f37540066e1d20028b201a180700098049baa00e8a4d13656401c01",
+      "hash": "a4ed983ad4f3f21f1572121e9a74ee534e4bd3bd7f507f7246f6a009"
+    },
+    {
+      "title": "fractions.fractions.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "stt_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "nft_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "nft_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "frac_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "max_parts",
+          "schema": {
+            "$ref": "#/definitions/Int"
+          }
+        }
+      ],
+      "compiledCode": "5903d901010022222229800aba2aba1aba0aab9faab9eaab9dab9a9bae0079bae0069bae0059bae0049bae0039bad002488888888888896600264653001300e00198071807800cdc3a4001300e00248889660026004601c6ea800e266446644b30013006001899192cc004c06400a0091640586eb4c05c004c04cdd50044566002600600315980098099baa0088014590144590112022198009180a980b180b180b180b000cdd2a40012301530160019180a980b180b000c8966002600c60246ea800a26464b30013019002801c590161bad301700130133754005164045370e9002244444465300198009bab300730183754015009808a002cc004dd59803980c1baa00a80ac051001488a6002601d30010038014005004528528a032488966002601c60346ea8042264b30015980099b8848008006266e24004052294101a456600266e1c0100062b3001300c003899198008009bac3009301d375401e44b30010018a508acc004c966003300137566018603e6ea800603901b4015159800cc004dd59806180f9baa00180d406500544c9660026026603e6ea8006266e1cdd6981198101baa30233020375400200b14a080f0c9660026014603e6ea8006264660180022601e6604600297ae030233020375400314c0103d87a800040786016603e6ea8006294101d4528203a30210018a518998010011811000a038407d1640691640691640686eb4c078c06cdd500844c9660026040003132598009803980e1baa001899198048008acc004cdc380319b8148000dd69810980f1baa0018acc004cdc3802a400314a31640711640706040603a6ea80062c80d8c020c070dd51804980e1baa301f0018b203a32330010013758603e60386ea8038896600200314bd7044cc8966002b300198009bab300c301f37546018603e6ea800a03901b40151598009804980f1baa300b301f37546018603e6ea800a2946294101d4528203a89981080119802002000c4cc01001000501d18100009810800a03c406422232598009805980d1baa0018a40011375a603c60366ea8005019192cc004c02cc068dd5000c530103d87a8000899198008009bab301f301c375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c0180062601a66042603e00497ae08a60103d87a80004075133004004302300340746eb8c074004c08000501e203232330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c0180062601866040603c00497ae08a60103d87a80004071133004004302200340706eb8c070004c07c00501d0c040dd50031bae3012300f37540066e1d20028b201a180700098049baa00e8a4d13656401c01",
+      "hash": "a4ed983ad4f3f21f1572121e9a74ee534e4bd3bd7f507f7246f6a009"
+    },
+    {
+      "title": "stt_one_shot.stt_one_shot.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/stt_one_shot~1SttAction"
+        }
+      },
+      "parameters": [
+        {
+          "title": "seed_ref",
+          "schema": {
+            "$ref": "#/definitions/cardano~1transaction~1OutputReference"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        }
+      ],
+      "compiledCode": "59021d0101002229800aba2aba1aba0aab9faab9eaab9dab9a9bae0024888888896600264653001300900198049805000cdc3a400130090024888966002600460126ea800e266446644b300130060018acc004c038dd5004400a2c807a2b300130030018acc004c038dd5004400a2c807a2c806100c09919912cc004c01cc038dd5004c566002660026eb0c048c03cdd5003119baf30133010375400202f130040028b201a8acc004c8cc008dd6180998081baa0072300698009bab300230113754600460226ea800600f00e401446026602800313370e0049000c5900d201a98009bab30103011301130113011300d375400900380520022232330010010032259800800c52845660026006602800314a31330020023015001403c8090888c966002600a601e6ea80062900044dd6980998081baa001403864b30013005300f375400314c0103d87a8000899198008009bab30143011375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301630140024bd7045300103d87a80004049133004004301800340486eb8c048004c054005013201c32330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301530130024bd7045300103d87a80004045133004004301700340446eb8c044004c05000501218059baa006375c601a60146ea800cdc3a4005164020300900130043754013149a26cac8011",
+      "hash": "e93f23655d7bad296555c279998c3ef09252516d74151df9442211d6"
+    },
+    {
+      "title": "stt_one_shot.stt_one_shot.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "seed_ref",
+          "schema": {
+            "$ref": "#/definitions/cardano~1transaction~1OutputReference"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        }
+      ],
+      "compiledCode": "59021d0101002229800aba2aba1aba0aab9faab9eaab9dab9a9bae0024888888896600264653001300900198049805000cdc3a400130090024888966002600460126ea800e266446644b300130060018acc004c038dd5004400a2c807a2b300130030018acc004c038dd5004400a2c807a2c806100c09919912cc004c01cc038dd5004c566002660026eb0c048c03cdd5003119baf30133010375400202f130040028b201a8acc004c8cc008dd6180998081baa0072300698009bab300230113754600460226ea800600f00e401446026602800313370e0049000c5900d201a98009bab30103011301130113011300d375400900380520022232330010010032259800800c52845660026006602800314a31330020023015001403c8090888c966002600a601e6ea80062900044dd6980998081baa001403864b30013005300f375400314c0103d87a8000899198008009bab30143011375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301630140024bd7045300103d87a80004049133004004301800340486eb8c048004c054005013201c32330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301530130024bd7045300103d87a80004045133004004301700340446eb8c044004c05000501218059baa006375c601a60146ea800cdc3a4005164020300900130043754013149a26cac8011",
+      "hash": "e93f23655d7bad296555c279998c3ef09252516d74151df9442211d6"
+    },
+    {
+      "title": "vault.vault.spend",
+      "datum": {
+        "title": "datum_opt",
+        "schema": {
+          "$ref": "#/definitions/vault~1VaultDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/vault~1VaultAction"
+        }
+      },
+      "parameters": [
+        {
+          "title": "stt_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "frac_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "frac_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "nft_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "nft_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        }
+      ],
+      "compiledCode": "59037901010022222229800aba2aba1aba0aab9faab9eaab9dab9a9bae0079bae0069bae0059bae0049bae0039bae002488888888888896600264653001300e00198071807800cdc3a4005300e00248889660026004601c6ea800e265300130130019809980a000cdc3a40009112cc004c004c048dd5004456600260266ea8022264b3001330013758602e60286ea80188cdd7980c180a9baa0010058acc004c008c04cdd5001c4c966002603200313298009114c004c01e6002007002800a008a50a51405d2301a301b001980c8012444b300198009bab300230193754600460326ea800602d015400d159800cc004dd59801180c9baa300230193754003012808a006899192cc006600201b01680aa0028acc006600201b01880ba0028acc004cdd780826103d87980008992cc004cdc3cc004dd59800980e1baa00e80bc05900719b8148000dd6980f980e1baa301f301c375401715980099b8798009bab3001301c375401d01980c200e480062660126eb0c00cc070dd500712cc00660026eacc018c074dd5000c05a02a803a3300198009bab3006301d375400301a80ca00ea50a51406d14a080da2c80d22c80d08c07cc080c080c080c0800062c80ca2c80ca2c80c8888c8cc004004dd61802980f1baa0042259800800c528c566002601b300137566010603e6ea8c088006009003402913300200230230018a50407481008c074c078c0780062c80ba2c80b844464b3001300c3018375400314800226eb4c070c064dd5000a02e32598009806180c1baa0018a6103d87a8000899198008009bab301d301a375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301f301d0024bd7045300103d87a8000406d1330040043021003406c6eb8c06c004c07800501c202e32330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301e301c0024bd7045300103d87a80004069133004004302000340686eb8c068004c07400501b45901619198008009bac30183015375400e44b30010018a5eb8226644b30013375e603660306ea80080222660340046600800800313300400400140586032002603400280ba2c80922c809088c8cc00400400c896600200314a11598009801980d000c528c4cc008008c06c00501520308b20288b202218079baa0038b201a180700098049baa00e8a4d13656401c01",
+      "hash": "e0d0b0b6c39b5d3259d753f55af71aa0628bb02af1547e85ebeb61e0"
+    },
+    {
+      "title": "vault.vault.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "stt_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "stt_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "frac_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "frac_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        },
+        {
+          "title": "nft_pid",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1PolicyId"
+          }
+        },
+        {
+          "title": "nft_name",
+          "schema": {
+            "$ref": "#/definitions/cardano~1assets~1AssetName"
+          }
+        }
+      ],
+      "compiledCode": "59037901010022222229800aba2aba1aba0aab9faab9eaab9dab9a9bae0079bae0069bae0059bae0049bae0039bae002488888888888896600264653001300e00198071807800cdc3a4005300e00248889660026004601c6ea800e265300130130019809980a000cdc3a40009112cc004c004c048dd5004456600260266ea8022264b3001330013758602e60286ea80188cdd7980c180a9baa0010058acc004c008c04cdd5001c4c966002603200313298009114c004c01e6002007002800a008a50a51405d2301a301b001980c8012444b300198009bab300230193754600460326ea800602d015400d159800cc004dd59801180c9baa300230193754003012808a006899192cc006600201b01680aa0028acc006600201b01880ba0028acc004cdd780826103d87980008992cc004cdc3cc004dd59800980e1baa00e80bc05900719b8148000dd6980f980e1baa301f301c375401715980099b8798009bab3001301c375401d01980c200e480062660126eb0c00cc070dd500712cc00660026eacc018c074dd5000c05a02a803a3300198009bab3006301d375400301a80ca00ea50a51406d14a080da2c80d22c80d08c07cc080c080c080c0800062c80ca2c80ca2c80c8888c8cc004004dd61802980f1baa0042259800800c528c566002601b300137566010603e6ea8c088006009003402913300200230230018a50407481008c074c078c0780062c80ba2c80b844464b3001300c3018375400314800226eb4c070c064dd5000a02e32598009806180c1baa0018a6103d87a8000899198008009bab301d301a375400444b30010018a6103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301f301d0024bd7045300103d87a8000406d1330040043021003406c6eb8c06c004c07800501c202e32330010010042259800800c5300103d87a8000899192cc004cdc8803000c56600266e3c018006266e9520003301e301c0024bd7045300103d87a80004069133004004302000340686eb8c068004c07400501b45901619198008009bac30183015375400e44b30010018a5eb8226644b30013375e603660306ea80080222660340046600800800313300400400140586032002603400280ba2c80922c809088c8cc00400400c896600200314a11598009801980d000c528c4cc008008c06c00501520308b20288b202218079baa0038b201a180700098049baa00e8a4d13656401c01",
+      "hash": "e0d0b0b6c39b5d3259d753f55af71aa0628bb02af1547e85ebeb61e0"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "title": "ByteArray",
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "cardano/assets/AssetName": {
+      "title": "AssetName",
+      "dataType": "bytes"
+    },
+    "cardano/assets/PolicyId": {
+      "title": "PolicyId",
+      "dataType": "bytes"
+    },
+    "cardano/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "fractions/FractionAction": {
+      "title": "FractionAction",
+      "anyOf": [
+        {
+          "title": "Init",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "parts",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        },
+        {
+          "title": "Combine",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "stt_one_shot/SttAction": {
+      "title": "SttAction",
+      "anyOf": [
+        {
+          "title": "Mint",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Burn",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "vault/VaultAction": {
+      "title": "VaultAction",
+      "anyOf": [
+        {
+          "title": "Combine",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "vault/VaultDatum": {
+      "title": "VaultDatum",
+      "anyOf": [
+        {
+          "title": "VaultDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "parts",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
